@@ -5,14 +5,10 @@ import numpy as np
 
 st.set_page_config(page_title="AI Climate Policy Simulator", layout="wide")
 
-# -----------------------------
-# Load Dataset
-# -----------------------------
 df = pd.read_csv("state_info.csv")
 
-# -----------------------------
+
 # Population Data (millions)
-# -----------------------------
 population = {
 "Andhra Pradesh":54,"Arunachal Pradesh":1.6,"Assam":35,"Bihar":124,
 "Chhattisgarh":29,"Goa":1.6,"Gujarat":71,"Haryana":29,
@@ -289,4 +285,5 @@ with tab4:
         csv,
         "climate_policy_results.csv",
         "text/csv"
+
     )
